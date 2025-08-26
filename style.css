@@ -17,50 +17,57 @@
                         width: 100%;
                     }
                     /* Mobile (up to 600px) */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
+
+    
+
+    /* Home/About sections stack */
     .Home, .about, .Services, .features, .Courses, .contact {
         grid-template-columns: 1fr !important;
         flex-direction: column;
         height: auto;
     }
+
     .column1, .text, .t2, .image, .fea, .contact-container {
         width: 100% !important;
         height: auto !important;
     }
+
+    /* Navbar mobile */
     .nav {
         display: flex;
         flex-direction: column;
         height: auto;
         gap: 10px;
     }
-    .fea {
-        margin: 10px 0;
-    }
-    .slider-wrapper {
-        width: 100%;
-    }
-    /* Fix for Features & Courses section on small screens */
 
+    /* Features & Courses cards */
     .features, .Courses {
         display: grid;
-        grid-template-columns: 1fr !important; /* 1 card per row */
-        gap: 15px; /* spacing between cards */
+        grid-template-columns: 1fr !important; /* stack 1 per row */
+        gap: 15px;
     }
 
     .fea, .course-card {
         width: 90% !important;
-        margin: 0 auto; /* center align cards */
+        margin: 0 auto;
     }
 
     .fea img, .course-card img {
         max-width: 100%;
-        height: auto; /* make images resize nicely */
+        height: auto;
     }
-}
 
+    /* Contact section stacks vertically */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-container {
+        width: 90% !important;
+        margin: 10px auto;
+    }
 }
 
 /* Tablets (601px – 1024px) */
