@@ -16,6 +16,67 @@
                     .t2 {
                         width: 100%;
                     }
+                    /* Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .Home, .about, .Services, .features, .Courses, .contact {
+        grid-template-columns: 1fr !important;
+        flex-direction: column;
+        height: auto;
+    }
+    .column1, .text, .t2, .image, .fea, .contact-container {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .fea {
+        margin: 10px 0;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+}
+
+/* Tablets (601px – 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Services, .features, .Courses {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+    .about {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .fea {
+        width: 90% !important;
+        margin: 10px auto;
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .Services, .features, .Courses {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .about {
+        grid-template-columns: 1fr 3fr;
+    }
+    .contact {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
                 }
                 body{
                     text-align: center; 
