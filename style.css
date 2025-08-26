@@ -3,6 +3,20 @@
                     margin: 0%;
                     padding: 0%;
                 }
+                @media screen and (max-width: 600px) {
+                    body {
+                        font-size: 14px;
+                    }
+                    .column1 {
+                        width: 100%;
+                    }
+                    .text {
+                        width: 100%;
+                    }
+                    .t2 {
+                        width: 100%;
+                    }
+                }
                 body{
                     text-align: center; 
     font-family: "Merriweather", serif;
