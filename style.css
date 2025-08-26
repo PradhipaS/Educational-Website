@@ -184,6 +184,8 @@ min-height: 700px;
 
 .testimonial {
   min-width: 100%;
+   height: auto;
+min-height: 700px;
   box-sizing: border-box;
   padding: 30px;
   background: white;
@@ -252,6 +254,7 @@ min-height: 700px;
 @media screen and (max-width: 600px) {
     .features, .Courses { grid-template-columns: 1fr; }
 }
+
 
 
 
