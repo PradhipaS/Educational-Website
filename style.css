@@ -42,6 +42,25 @@
     .slider-wrapper {
         width: 100%;
     }
+    /* Fix for Features & Courses section on small screens */
+
+    .features, .Courses {
+        display: grid;
+        grid-template-columns: 1fr !important; /* 1 card per row */
+        gap: 15px; /* spacing between cards */
+    }
+
+    .fea, .course-card {
+        width: 90% !important;
+        margin: 0 auto; /* center align cards */
+    }
+
+    .fea img, .course-card img {
+        max-width: 100%;
+        height: auto; /* make images resize nicely */
+    }
+}
+
 }
 
 /* Tablets (601px – 1024px) */
