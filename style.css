@@ -78,6 +78,18 @@ header {
   box-sizing: border-box;
   text-align: center;
 }
+/* For testimonial section */
+#testimonial {
+  margin-top: 40px;  /* pushes it down */
+  padding-top: 20px; /* optional for spacing */
+}
+
+/* For contact section */
+#contact {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
 .fea img {
   max-width: 100%;
   height: auto;
