@@ -40,8 +40,7 @@ header {
 .about,
 .Services,
 .features,
-.Courses,
-.contact {
+.Courses {
   display: grid;
   gap: 20px;
   padding: 20px;
@@ -121,17 +120,53 @@ header {
   cursor: pointer;
 }
 
-/* Contact */
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: rgb(233, 230, 246);
+}
+
+.contact h1 {
+  color: #181d48;
+  margin-bottom: 20px;
+}
+
 .contact-container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
+
 input, textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 8px 0;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
   border: 1px solid #7b6262;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+#btn {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#btn:hover {
+  background-color: darkblue;
 }
 
 /* RESPONSIVE BREAKPOINTS */
