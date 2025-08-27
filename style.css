@@ -179,6 +179,21 @@ header {
   text-align: center;
   margin-bottom: 20px;
 }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;   /* ✅ allows wrapping */
+  justify-content: center;
+  gap: 10px;         /* space between items */
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  flex: 1 1 auto;   /* items shrink & expand */
+  text-align: center;
+}
+
 input, textarea {
   width: 100%;
   padding: 12px;
