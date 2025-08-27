@@ -64,22 +64,33 @@ header {
 .Services,
 .features,
 .Courses {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 40px 20px;
-  background-color: rgb(233, 230, 246);
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;       /* spacing between cards */
+  padding: 20px;
 }
 
 /* Cards */
 .fea {
-  background-color: rgba(137, 155, 208, 0.666);
-  border-radius: 8px;
-  border: 2px solid #ddd;
-  padding: 20px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+   border: 1px solid #ddd;  /* optional, can remove */
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
   text-align: center;
-  transition: 0.3s ease;
+}
+.fea img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.fea h5 {
+  margin: 10px 0;
+}
+
+.fea p {
+  font-size: 14px;
+  line-height: 1.4;
 }
 .fea:hover {
   transform: scale(1.05);
