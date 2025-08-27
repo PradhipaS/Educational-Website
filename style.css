@@ -8,6 +8,7 @@ body {
   font-family: "Merriweather", serif;
   overflow-x: hidden;
   text-align: center;
+  background: #fff;
 }
 
 /* Navbar */
@@ -35,36 +36,47 @@ header {
   font-size: 24px;
 }
 
-/* Sections */
-.Home,
-.about,
-.Services,
-.features,
-.Courses {
-  display: grid;
-  gap: 20px;
+/* Home Section */
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
   background-color: rgb(233, 230, 246);
 }
 
 /* About */
 .about {
+  display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(233, 230, 246);
   align-items: center;
 }
-
 .image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Cards / Features */
+/* Services / Features / Courses */
+.Services,
+.features,
+.Courses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: rgb(233, 230, 246);
+}
+
+/* Cards */
 .fea {
   background-color: rgba(137, 155, 208, 0.666);
   border-radius: 8px;
   border: 2px solid #ddd;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
   text-align: center;
   transition: 0.3s ease;
@@ -128,12 +140,10 @@ header {
   padding: 40px 20px;
   background-color: rgb(233, 230, 246);
 }
-
 .contact h1 {
   color: #181d48;
   margin-bottom: 20px;
 }
-
 .contact-container {
   width: 100%;
   max-width: 500px;
@@ -143,7 +153,6 @@ header {
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
-
 input, textarea {
   width: 100%;
   padding: 12px;
@@ -152,7 +161,6 @@ input, textarea {
   border-radius: 5px;
   font-size: 16px;
 }
-
 #btn {
   background-color: blue;
   color: white;
@@ -164,7 +172,6 @@ input, textarea {
   margin-top: 10px;
   width: 100%;
 }
-
 #btn:hover {
   background-color: darkblue;
 }
