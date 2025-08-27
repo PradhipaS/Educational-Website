@@ -40,7 +40,12 @@ header {
 .about,
 .Services,
 .features,
+<<<<<<< HEAD
 .Courses {
+=======
+.Courses,
+.contact {
+>>>>>>> 8482dab417ae170433558f49dc07b09eea66c03b
   display: grid;
   gap: 20px;
   padding: 20px;
@@ -120,6 +125,7 @@ header {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* Contact Section */
 .contact {
   display: flex;
@@ -167,6 +173,19 @@ input, textarea {
 
 #btn:hover {
   background-color: darkblue;
+=======
+/* Contact */
+.contact-container {
+  padding: 20px;
+  text-align: center;
+}
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #7b6262;
+  border-radius: 5px;
+>>>>>>> 8482dab417ae170433558f49dc07b09eea66c03b
 }
 
 /* RESPONSIVE BREAKPOINTS */
